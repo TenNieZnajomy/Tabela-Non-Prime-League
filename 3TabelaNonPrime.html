@@ -6,6 +6,130 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="nonprimeleague.css" />
 </head>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #1c1c1c url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="%23222222" stroke-width="1"><rect width="20" height="20"/><rect x="20" y="20" width="20" height="20"/></svg>') repeat;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px 40px;
+      color: #ccc;
+    }
+
+    .header {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 14px;
+      display: flex;
+      gap: 6px;
+      user-select: none;
+      margin-bottom: 20px;
+    }
+
+    .mx {
+      color: #ff0000;
+      font-weight: 700;
+      animation: pulseGlow 2s ease-in-out infinite;
+    }
+
+    .project {
+      font-weight: 600;
+      animation: fadeColor 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        text-shadow:
+          0 0 6px #ff0000,
+          0 0 10px #ff4d4d,
+          0 0 14px #ff0000;
+      }
+      50% {
+        text-shadow:
+          0 0 12px #ff0000,
+          0 0 20px #ff4d4d,
+          0 0 28px #ff0000;
+      }
+    }
+
+    @keyframes fadeColor {
+      0% {
+        color: #000;
+      }
+      100% {
+        color: #fff;
+      }
+    }
+
+    .title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 60px;
+      user-select: none;
+      display: flex;
+      gap: 15px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin-bottom: 40px;
+    }
+
+    .non-prime {
+      background: linear-gradient(90deg, #2f2f2f, #bfbfbf, #2f2f2f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 4px #999);
+    }
+
+    .league {
+      color: #ff1a1a;
+      text-shadow:
+        0 0 5px #ff1a1a,
+        0 0 15px #ff3333;
+    }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 100%;
+      max-width: 900px;
+      background-color: #2a2a2a;
+      box-shadow: 0 0 10px rgba(255, 26, 26, 0.5);
+      border-radius: 8px;
+      overflow: hidden;
+      color: #ddd;
+      font-size: 16px;
+      border: 2px solid #444;
+    }
+
+    th, td {
+      border-right: 1.5px solid #555;
+      padding: 12px 15px;
+      text-align: center;
+      user-select: none;
+    }
+
+    th:last-child, td:last-child {
+      border-right: none;
+    }
+
+    thead tr {
+      border-bottom: 4px solid #ff4d4d;
+      box-shadow: inset 0 -2px 0 #ff4d4d, 0 2px 6px rgba(255, 77, 77, 0.3);
+    }
+
+    tbody tr {
+      border-bottom: 1.5px solid #444;
+    }
+
+    tr:hover {
+      background-color: #ff1a1a;
+      color: #fff;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+  </style>
+</head>
 <body>
 
   <div class="header">
